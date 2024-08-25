@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- basic links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    
+    <h1>JQuery Practice</h1>
+    <div class="container">
+        <ol>
+            <!-- Drag -->
+            <li>
+                <h3 class="space">Draggable Content</h3>
+                <div id="draggable" class="ui-widget-content space">
+                    DragMe Please
+                </div>
+            </li>
+
+            <!-- Drag and Drop -->
+            <li>
+                
+                <h3 class="space">Drag and Drop Content</h3>
+                <div id="dragg" class="ui-widget-content space">
+                    <p>DragMe</p>
+                </div>
+                <div id="drop" class="ui-widget-header space">
+                    <p>Drop Here</p>
+                </div>
+            </li>
+
+            <!-- Accordion -->  
+            <li>
+                <div id="accordion" class="accordion">
+                    <h3 class="space">Section 1</h3>
+                    <div class="space1">
+                        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+                    <h3 class="space">Section 2</h3>
+                    <div class="space1">
+                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                        suscipit faucibus urna.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Accordion -->
+            <li>
+                <div id="accordion2" class="accordion2">
+                    <h3 class="space">Section 1</h3>
+                    <div class="space1">
+                        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+                    <h3 class="space">Section 2</h3>
+                    <div class="space1">
+                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                        suscipit faucibus urna. <br> Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- auto complete -->
+            <li>
+                <div class="ui-widget space">
+                    <label for="tags">Programming Languages: </label>
+                    <input id="tags">
+                </div>
+            </li>
+
+            <li>
+                <div class="widget">
+                    <h3 class="space">Select a Location: </h3>
+                    <fieldset class="space1">
+                      <label for="radio-1" class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label">New York</label>
+                      <input type="radio" name="radio-1" id="radio-1" class="">
+                      <label for="radio-2" class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label">Paris</label>
+                      <input type="radio" name="radio-1" id="radio-2" class="">
+                      <label for="radio-3" class="ui-checkboxradio-label ui-corner-all ui-button ui-widget ui-checkboxradio-radio-label">London</label>
+                      <input type="radio" name="radio-1" id="radio-3" class="">
+                    </fieldset>
+                </div>
+            </li>
+            <!-- DatePicker -->
+            <li>
+                <h3 class="space">DatePicker</h3>
+                <p class="space">Date: <input type="text" id="datepicker"></p>
+            </li>
+
+            <!-- Draggable & Sortable -->
+            <li>
+                <h3 class="space">Draggable & Sortable</h3>
+                <ul id="sortable" class="space">
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>১. বসেন বসেন... বইসা যান</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>২. ভেরি ইম্পরটেন্ট ইলেকশন... ইলেকশন</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>৩. মোনাজাত ধরেন সবাই</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>৪. আপনি উত্তেজিত হবেন না...</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>৫. একি হইল দুনিয়ার হাল!</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>৬. আমি ঘুম ভাঙ্গানিয়া পাখি..</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>৭. হরিণ খামচায় বাঘের গাল...</li>
+                </ul>
+            </li>
+
+            <!-- Toggle  -->
+            <li>
+                <h3 class="space">Toggle Effect</h3>
+                <div class="toggler space">
+                    <div id="effect" class="ui-widget-content ui-corner-all">
+                        <h3 class="ui-widget-header ui-corner-all">Toggle</h3>
+                        <p>
+                            Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+                        </p>
+                    </div>
+                </div>
+                   
+                <select name="effects" id="effectTypes" class="space">
+                    <option value="bounce">Bounce</option>
+                    <option value="blind">Blind</option>
+                    <option value="clip">Clip</option>
+                    <option value="drop">Drop</option>
+                    <option value="explode">Explode</option>
+                    <option value="fade">Fade</option>
+                    <option value="fold">Fold</option>
+                    <option value="highlight">Highlight</option>
+                    <option value="puff">Puff</option>
+                    <option value="pulsate">Pulsate</option>
+                    <option value="scale">Scale</option>
+                    <option value="shake">Shake</option>
+                    <option value="size">Size</option>
+                    <option value="slide">Slide</option>
+                </select>
+                   
+                <button id="button" class="ui-state-default ui-corner-all space">Run Effect</button>
+                   
+            </li>
+        </ol>
+        
+    </div>
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
